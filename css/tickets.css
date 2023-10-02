@@ -1,0 +1,109 @@
+
+
+/* tickets */
+   /* Styles for the card */
+
+
+.cards-container{
+    display: flex;
+}
+
+.ticket-card {
+    display: inline-block;
+    width: 60%;    
+    border-bottom: 3px solid #bd0c0c;
+    padding: 15px;
+    box-shadow: 0 0px  rgba(0, 0, 0, 0.1);
+    background-color: rgba(255,255,255,0.2);
+}
+
+.cards-container:last-child{
+    border: none;
+}
+/* Title styles */
+.ticket-title {
+    font-weight: bold;
+}
+
+/* Description styles */
+.ticket-description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Price styles */
+.ticket-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}
+
+/* Button styles */
+.ticket-button {
+    display: inline-block;
+    color: #000000;
+    border: none;
+    background-color: #c92b2b;
+    font-size: large;   
+    padding: 3px 7px; 
+    cursor: pointer;
+    transition:ease-in-out 0.2s;
+}
+
+
+.add-button{
+    border-right: 2px solid #c92b2b;
+}
+
+.remove-button{
+    border-left: 2px solid #c92b2b;
+}
+
+.ticket-button:hover{
+    background-color: rgba(255, 255, 255, 0.3);    
+}
+
+.ticket-qty{
+    display: inline-flex;
+    margin: 0;
+    padding:5px;
+}
+
+.qty{
+    display: flex;
+    margin: 0;
+    border: 2px solid #c92b2b;
+    width: fit-content;
+}
+
+.cards-container:nth-last-child(){
+    border: none;
+}
+
+#bill{
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px 10px;
+    float: right;
+}
+
+#bill table{
+    text-align: left;
+}
+
+
+@media (max-width: 768px){
+    h1{
+        text-align: center;
+    }
+    .ticket-card{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&family=Pacifico&family=Sono&family=Victor+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&family=Nunito+Sans:opsz@6..12&family=Pacifico&family=Roboto&family=Sono&family=Victor+Mono&display=swap');
 
 *{
     scroll-behavior: smooth;
@@ -8,9 +7,25 @@
 
 body{
     background-color: rgb(160, 141, 141);
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+h1, h2{
+    font-family: 'Bree Serif';
+    color: rgb(124, 32, 32);
+}
+
+h1{
+    font-size: 2.5em;
 }
 
 
+body{
+    background-image: url('/assets/background-image.jpg');
+    background-size: cover;
+    background-position: center center;
+}
 
 #title{
     text-align: center;
@@ -33,21 +48,23 @@ body{
     color: rgb(170, 30, 30);
 }
 
-.navbar{
+#navbar{
     text-align: center;
     padding: 10px;
     border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
 }
 
-.navbar a{
+#navbar a{
     text-decoration: none;
-    color: rgb(51, 19, 19);
+    color: rgb(190, 29, 29);
     font-family: 'Bree Serif';
     font-size: 1.5em;
     padding: 5px 5vw;
     transition-duration: 0.2s;
 }
 
-.navbar a:hover{
+#navbar a:hover{
     color: rgb(151, 16, 16);
 }
