@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/tickets.css">
-    <script src="index.js" defer></script>
+    <script src="./scripts/tickets.js" defer></script>
+
     <title>Symphony</title>
 </head>
 <body>
@@ -22,73 +23,78 @@
     <hr id="nav-hr">
     <div id="content">
         <div id="cards-container">
-            <h1>Book your attendance</h1>
+            <h1 style="text-align: center;" id="book">Book your attendance</h1>
             <div class="ticket-card">
                 <div class="ticket-title"><h2>Classic Pass</h2> </div>
                 <div class="ticket-description">Enjoy a live music experience!</div>
-                <div class="ticket-price">$50.00</div>
+                <div class="ticket-price">₹1499</div>
                 <div class="qty">
-                    <button class="ticket-button add-button" onclick="addToCart()">+</button>
-                    <div class="ticket-qty">10</div>
-                    <button class="ticket-button remove-button" onclick="removeFromCart()">--</button>
+                    <button class="ticket-button remove-button">--</button>
+                    <div class="ticket-qty">0</div>
+                    <button class="ticket-button add-button">+</button>
                 </div>       
             </div>
             <div class="ticket-card">
-                <div class="ticket-title"><h2>Classic Pass</h2> </div>
+                <div class="ticket-title"><h2>Front Row Pass</h2> </div>
                 <div class="ticket-description">Enjoy a live music experience!</div>
-                <div class="ticket-price">$50.00</div>
+                <div class="ticket-price">₹1999</div>
                 <div class="qty">
-                    <button class="ticket-button add-button" onclick="addToCart()">+</button>
-                    <div class="ticket-qty">10</div>
-                    <button class="ticket-button remove-button" onclick="removeFromCart()">--</button>
-                </div>       
+                    <button class="ticket-button remove-button">--</button>
+                    <div class="ticket-qty">0</div>
+                    <button class="ticket-button add-button">+</button>
+                </div>     
             </div>
              <div class="ticket-card">
-                <div class="ticket-title"><h2>Classic Pass</h2> </div>
+                <div class="ticket-title"><h2>Backstage Pass</h2> </div>
                 <div class="ticket-description">Enjoy a live music experience!</div>
-                <div class="ticket-price">$50.00</div>
+                <div class="ticket-price">₹2599</div>
                 <div class="qty">
-                    <button class="ticket-button add-button" onclick="addToCart()">+</button>
-                    <div class="ticket-qty">10</div>
-                    <button class="ticket-button remove-button" onclick="removeFromCart()">--</button>
-                </div>       
+                    <button class="ticket-button remove-button">--</button>
+                    <div class="ticket-qty">0</div>
+                    <button class="ticket-button add-button">+</button>
+                </div>   
             </div>
             
         </div>
         <div id="bill-container">
             <div id="bill">
                 <h2>Ticket Summary</h2>
-                <table>
+                <table id="bill-table">
                     <tr>
                         <th>Item</th>
                         <th>Price</th>
                         <th>Qty.</th>
                         <th>Total</th>
                     </tr>
-                    <tr>
-                        <th>Classic</th>
-                        <th>500</th>
-                        <th>2</th>
-                        <th>1000</th>
-                    </tr>
-                    <tr>
-                        <th>Backstage</th>
-                        <th>2000</th>
-                        <th>2</th>
-                        <th>4000</th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th></th>
+                    <tr id="classic-bill">
+                        <th class="name">Classic</th>
+                        <th class="price">1499</th>
+                        <th class="ticket-qty">0</th>
+                        <th class="total">0</th>
+                    </tr>              
+                    <tr id="pro-bill">
+                        <th class="name">Front Row</th>
+                        <th class="price">1999</th>
+                        <th class="ticket-qty">0</th>
+                        <th class="total">0</th>
+                    </tr>  
+                    <tr id="back-bill">
+                        <th class="name">Backstage</th>
+                        <th class="price">2599</th>
+                        <th class="ticket-qty">0</th>
+                        <th class="total">0</th> 
+                    </tr>  
+                    <tr id="grand">
                         <th>Grand</th>
-                        <th>500</th>
+                        <th></th>
+                        <th></th>
+                        <th>0</th>
                     </tr>
                 </table>
                 <a href="tickets.html" class="ticket-button">Checkout</a>
             </div>
-        </div>
-       
+        </div>       
     </div>
   
-</body>
+</body> 
 </html>

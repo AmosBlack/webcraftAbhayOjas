@@ -8,6 +8,7 @@
 body{
     background-color: rgb(160, 141, 141);
     font-family: 'Roboto', sans-serif;
+    height: 100%;
    
 }
 
@@ -18,6 +19,7 @@ h1, h2{
 
 h1{
     font-size: 2.5em;
+    text-align: center;
 }
 
 
@@ -32,6 +34,7 @@ nav{
     padding: 0;
     margin: 0;
 }
+
 
 #title{
     text-align: center;
