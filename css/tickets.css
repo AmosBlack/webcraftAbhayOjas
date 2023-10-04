@@ -17,9 +17,6 @@
     background-color: rgba(255,255,255,0.2);
 }
 
-.cards-container:last-child{
-    border: none;
-}
 /* Title styles */
 .ticket-title {
     font-weight: bold;
