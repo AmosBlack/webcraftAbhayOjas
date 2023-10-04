@@ -1,0 +1,16 @@
+.text-card{
+    border: 2px solid white;
+    box-shadow: 2px 2px  2px red;
+    color: white;
+}
+
+p{
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1,h2{
+    color: rgb(221, 42, 42);
+}
