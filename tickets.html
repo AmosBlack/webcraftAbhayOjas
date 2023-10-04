@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/tickets.css">
     <script src="./scripts/tickets.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+
 
     <title>Symphony</title>
 </head>
 <body>
     <nav>
-        <h1 id="title">SYMPHONY</h1>
+        <h1 id="title" >SYMPHONY</h1> <button id="toggleNav" >☰</button>
         <div id="navbar">
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="programme.html">PROGRAMME</a>
-            <a href="tickets.html">TICKETS</a>
+            <ul id="nav-el" class="visible">
+                <li> <a href="index.html">HOME</a></li>
+                <li> <a href="about.html">ABOUT</a></li>
+                <li> <a href="programme.html">PROGRAMME</a></li>
+                <li> <a href="tickets.html">TICKETS</a></li>
+            </ul>
         </div>
     </nav>
     <hr id="nav-hr">

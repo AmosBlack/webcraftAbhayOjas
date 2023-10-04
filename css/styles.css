@@ -42,7 +42,7 @@ nav{
     font-family:'Pacifico', sans-serif;
     color: rgb(204, 45, 45);
     margin: auto;
-    font-size: 3em;
+    font-size: 2.2em;
     /* background-image: url('https://images.unsplash.com/photo-1518893063132-36e46dbe2428?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80');
     background-position: left top;
     -webkit-background-clip: text;
@@ -126,59 +126,67 @@ h1:hover,h2:hover{
 } */
 
 
+/* 
+Default styles for the navbar
+#navbar {
+    display: flex;
+    justify-content: space-around;
+}
 
-#gallery{
-    -webkit-column-count:4;
-    -moz-column-count:4;
-    column-count:4;
+/* Styles for the button 
+#navbar-button {
+    display: none; /* Initially hide the button 
+}
+
+/* Media query for screens smaller than 800px 
+@media screen and (max-width: 800px) {
+    #navbar {
+        display: none; /* Hide the navbar 
+    }
     
-    -webkit-column-gap:20px;
-    -moz-column-gap:20px;
-    column-gap:20px;
-  }
-  @media (max-width:1200px){
-    #gallery{
-    -webkit-column-count:3;
-    -moz-column-count:3;
-    column-count:3;
-      
-    -webkit-column-gap:20px;
-    -moz-column-gap:20px;
-    column-gap:20px;
-  }
-  }
-  @media (max-width:800px){
-    #gallery{
-    -webkit-column-count:2;
-    -moz-column-count:2;
-    column-count:2;
-      
-    -webkit-column-gap:20px;
-    -moz-column-gap:20px;
-    column-gap:20px;
-  }
-  }
-  @media (max-width:600px){
-    #gallery{
-    -webkit-column-count:1;
-    -moz-column-count:1;
-    column-count:1;
-  }  
-  }
-  #gallery img,#gallery video {
-    width:100%;
-    height:auto;
-    margin: 4% auto;
-    box-shadow:-3px 5px 15px #000;
-    cursor: pointer;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-  }
-  .modal-img,.model-vid{
-    width:100%;
-    height:auto;
-  }
-  .modal-body{
-    padding:0px;
-  }
+    #navbar-button {
+        display: block; /* Show the button 
+    }
+} */
 
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;    
+}
+
+#toggleNav {
+    display: none; /* Initially hide #toggleNav */
+    background-color: rgba(194, 28, 28, 0);
+    border-radius: 25px;
+    border: none;
+    text-decoration: none;
+    color: rgb(185, 33, 33);
+    font-family: 'Bree Serif';
+    font-size: 1.5em;
+    padding: 5px 5vw;
+    transition-duration: 0.2s;
+    position: absolute;
+    top: 10px;
+}
+
+@media (max-width: 700px) {
+    #toggleNav {
+        display: flex; /* Display #toggleNav when screen size is small */
+    }
+    ul li {
+        display: none;
+    }
+    .visible li {
+        display: block;
+      
+    }
+}
+
+#toggleNav:hover{
+    color: rgb(151, 16, 16);
+    cursor: pointer;
+
+}
