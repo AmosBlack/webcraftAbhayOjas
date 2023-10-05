@@ -18,5 +18,3 @@ toggleButton.addEventListener("click", () => {
     }
 })
 
-var audio = new Audio('webaudio.mp3');
-audio.play();
