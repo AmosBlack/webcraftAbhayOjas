@@ -6,9 +6,11 @@
 }
 
 body{
-    background-color: rgb(160, 141, 141);
     font-family: 'Roboto', sans-serif;
     height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-size:150%;
+    background-position: center auto;
    
 }
 
@@ -21,13 +23,6 @@ h1, h2{
 h1{
     font-size: 2.5em;
     text-align: center;
-}
-
-
-body{
-    background-image: url('https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-    background-size:150%;
-    background-position: center auto;
 }
 
 nav{
@@ -138,4 +133,36 @@ ul li{
     color: rgb(151, 16, 16);
     cursor: pointer;
 
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(circle,rgb(150, 19, 19) , rgb(109, 31, 31) 40%, rgb(71, 7, 7));
+    position: absolute;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    z-index: 999;
+}
+
+#loader img{
+    border-radius: 50%;  
+    animation: spin 2s linear infinite;
+    border: none;
+    margin: auto;
+}
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(359deg); }
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

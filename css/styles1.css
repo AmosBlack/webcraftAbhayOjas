@@ -6,8 +6,10 @@
 }
 
 body{
-    background-color: rgb(160, 141, 141);
     font-family: 'Roboto', sans-serif;
+    background-image: url('/assets/background-image.jpg');
+    background-size: cover;
+    background-position: center center;
    
 }
 
@@ -19,13 +21,6 @@ h1, h2{
 
 h1{
     font-size: 2.5em;
-}
-
-
-body{
-    background-image: url('/assets/background-image.jpg');
-    background-size: cover;
-    background-position: center center;
 }
 
 nav{
@@ -76,18 +71,33 @@ nav{
     color: rgb(151, 16, 16);
 }
 
+#loader{
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(circle,rgb(150, 19, 19) , rgb(109, 31, 31) 40%, rgb(71, 7, 7));
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    position: absolute;
+}
 
-.loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
+#loader img{
+    border-radius: 50%;  
     animation: spin 2s linear infinite;
-    z-index: 999;
-  }
+    border: none;
+    margin: auto;
+}
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    100% { transform: rotate(359deg); }
   }
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
