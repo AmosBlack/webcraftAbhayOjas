@@ -102,7 +102,7 @@
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 768px){
     #bill{
         margin-left:30vw;
     }

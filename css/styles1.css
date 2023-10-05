@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&family=Nunito+Sans:opsz@6..12&family=Pacifico&family=Roboto&family=Sono&family=Victor+Mono&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(160, 141, 141);
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+h1, h2{
+    font-family: 'Bree Serif';
+    color: rgb(124, 32, 32);
+    text-shadow: 1px 0 rgb(43, 3, 3), -1px 0 rgb(43, 3, 3), 0 0 2px rgb(43, 3, 3);
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+
+body{
+    background-image: url('/assets/background-image.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    text-align: center;
+    font-family:'Pacifico', sans-serif;
+    color: rgb(110, 36, 36);
+    size:5rem;
+    transition: ease-in-out 0.1s;
+    margin-bottom: 0;
+    
+}
+
+.title:hover{
+    background-position: center top;
+    cursor: pointer;
+    color: rgb(170, 30, 30);
+}
+
+#navbar{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-hr{
+    background-color: rgb(170, 30, 30);
+    height: 3px;
+    border: none;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: rgb(190, 29, 29);
+    font-family: 'Bree Serif';
+    font-size: 1.5em;
+    padding: 5px 5vw;
+    transition-duration: 0.2s;
+}
+
+#navbar a:hover{
+    color: rgb(151, 16, 16);
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    z-index: 999;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
